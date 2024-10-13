@@ -30,9 +30,9 @@ namespace learn.Controllers
             _configJwt = configJwt.Value;
         }
 
-        [HttpPost("[action]")] // new
+        [HttpPost("[action]")]
         public async Task<IActionResult> Login(
-            [FromBody] // new
+            [FromBody]
             AuthInputModel.Login input)
         {
             // check is _context null or not 
